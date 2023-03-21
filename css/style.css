@@ -1,0 +1,165 @@
+:root {
+  --brand-color: #212121;
+  --hover-color: #2196f3;
+  --studio-color: #000000;
+  --contacts-color: #757575;
+  --white-color: #ffffff;
+  --footer-color: #2f303a;
+  --link-color: #ffffff99;
+}
+
+/* style dla body na obóch stronach */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-color);
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* style dla logo na obóch stronach */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+.studio {
+  color: var(--studio-color);
+}
+.studio2 {
+  color: var(--white-color);
+}
+
+/* style dla konkaktów w header na obóch stronach */
+.contacts-size a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+.contacts-size:hover,
+.contacts-size:focus,
+.contacts-size2:hover,
+.contacts-size2:focus,
+.contacts-size-down:hover,
+.contacts-size-down:focus,
+.link-color-button:hover,
+.link-color-button:focus {
+  color: var(--hover-color);
+}
+
+.contacts-size2 a {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--contacts-color);
+}
+
+/* style dla h1 w index.html */
+.effects {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--white-color);
+  background-color: var(--footer-color);
+}
+/* style dla button w index.html */
+.button-index {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--white-color);
+}
+
+.button-index:hover,
+.button-index:focus,
+.button-port:hover,
+.button-port:focus {
+  cursor: pointer;
+  font-size: 16 px;
+}
+
+/* style dla h3 w index.html */
+.lorem-header {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* style dla paragrafów w index.html */
+.lorem-content {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* style dla h3 w index.html */
+.two-level {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+/* style dla john done w index.html */
+.john {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+/* style dla stanowisk pracy john done w index.html */
+.john-job {
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--white-color);
+}
+
+.button-list,
+.button-order {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--brand-color);
+}
+
+/* style dla nazw zdjęć portfolio.html */
+.img-name {
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* style dla opisu zdjęć portfolio.html */
+.img-descripcion {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--contacts-color);
+}
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+/* style dla kontaktów w footerze portfolio.html */
+.contacts-size3 a {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white-color);
+}
+
+.link-color-button {
+  color: var(--link-color);
+}
+
+/* style dla adresu w footerze portfolio.html */
+.adress-size {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white-color);
+}
