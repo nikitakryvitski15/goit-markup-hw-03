@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --brand-color: #212121;
   --hover-color: #2196f3;
@@ -6,6 +11,7 @@
   --white-color: #ffffff;
   --footer-color: #2f303a;
   --link-color: #ffffff99;
+  --backgrund-button:#F5F4FA; 
 }
 
 /* style dla body na obóch stronach */
@@ -20,8 +26,15 @@ ul {
   list-style: none;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
 /* style dla logo na obóch stronach */
 .logo {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -29,6 +42,8 @@ ul {
   line-height: 1.3;
   color: var(--hover-color);
   text-decoration: none;
+  padding-right: 93px;
+  margin-right: 96px;
 }
 
 .studio {
@@ -38,7 +53,39 @@ ul {
   color: var(--white-color);
 }
 
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+  height: 80px;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.nav-menu {
+  display: flex;
+  align-content: center;
+}
+
 /* style dla konkaktów w header na obóch stronach */
+.link-tab {
+  padding: 32px 46px 32px 46px;
+  color: var(--contacts-color);
+}
+
+.contacts-size {
+  display: flex;
+}
+
+.contacts-size2 {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--contacts-color);
+}
+
 .contacts-size a {
   font-size: 14px;
   line-height: 1.6;
@@ -52,18 +99,17 @@ ul {
 .contacts-size2:focus,
 .contacts-size-down:hover,
 .contacts-size-down:focus,
-.link-color-button:hover,
-.link-color-button:focus {
+.link-tab:hover,
+.link-tab:focus {
   color: var(--hover-color);
 }
 
-.contacts-size2 a {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.1;
-  color: var(--contacts-color);
+.box1 {
+  width: 1600px;
+  height: 600px;
+  background-color: var(--footer-color);
+  justify-content: center;
 }
-
 /* style dla h1 w index.html */
 .effects {
   font-size: 44px;
@@ -71,6 +117,34 @@ ul {
   line-height: 1.3;
   color: var(--white-color);
   background-color: var(--footer-color);
+  justify-content: center;
+  padding: 200px 452px 280px 452px;
+  width: 696px;
+  height: 120px;
+}
+
+.button-order {
+  padding-top: 30px;
+  padding-left: 700px;
+  padding-right: 700px;
+  padding-bottom: 200px;
+
+}
+
+.order-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--brand-color);
+  background-color: var(--hover-color);
+  color: var(--white-color);
+  align-content: center;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 10px 41px 10px 42px;
+
+  
 }
 /* style dla button w index.html */
 .button-index {
@@ -86,8 +160,35 @@ ul {
 .button-port:focus {
   cursor: pointer;
   font-size: 16 px;
+  background-color: var(--hover-color);
+  color: var(--white-color);
 }
 
+.button-port{
+  border: 1px solid var(--backgrund-button);
+  border-radius: 4px;
+  color: var(--brand-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.text-column {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.photo {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 94px;
+}
+
+.img-size {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 /* style dla h3 w index.html */
 .lorem-header {
   font-size: 14px;
@@ -106,31 +207,76 @@ ul {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
+  padding: 94px 695px 50px 695px;
 }
+
+.team {
+  background-color: #f5f4fa;
+  width: 1600px;
+  height: 648px;
+}
+
+.card {
+  display: flex;
+  column-gap: 30px;
+  padding-bottom: 94px;
+  padding-top: 186px;
+}
+
+.shadow-card {
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
+}
+
+.card-discribe {
+  align-self: center;
+}
+
 /* style dla john done w index.html */
 .john {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
+  padding: 30px; 99px; 10px; 99px;
 }
 /* style dla stanowisk pracy john done w index.html */
 .john-job {
   font-size: 16px;
   line-height: 1.1;
-  color: var(--white-color);
+  color: var(--contacts-color);
+  padding: 10px; 70px; 30px; 70px;
 }
 
-.button-list,
-.button-order {
+.button-list {
   font-size: 16px;
   line-height: 1.6;
   color: var(--brand-color);
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  
+}
+
+.container-card{
+  display:flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-bottom: 94px;
+}
+
+.border-card{
+  border: 1px solid #EEEEEE;
+  
 }
 
 /* style dla nazw zdjęć portfolio.html */
 .img-name {
   font-size: 18px;
   line-height: 2;
+  padding: 20px 24px 4px 24px;
 }
 
 /* style dla opisu zdjęć portfolio.html */
@@ -138,10 +284,14 @@ ul {
   font-size: 16px;
   line-height: 1.8;
   color: var(--contacts-color);
+  padding: 4px 24px 20px 24px;
 }
 
 .footer {
   background-color: var(--footer-color);
+  width: 1600px;
+  height: 252px;
+  margin-top: 94px;
 }
 
 /* style dla kontaktów w footerze portfolio.html */
@@ -152,6 +302,9 @@ ul {
   color: var(--white-color);
 }
 
+.contacts-size3{
+
+}
 .link-color-button {
   color: var(--link-color);
 }
