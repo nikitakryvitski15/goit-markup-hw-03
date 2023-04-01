@@ -29,6 +29,7 @@ ul {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0, 15px;
   
 }
 
@@ -42,8 +43,7 @@ ul {
   line-height: 1.3;
   color: var(--hover-color);
   text-decoration: none;
-  padding-right: 93px;
-  margin-right: 96px;
+  margin-right: 93px;
 }
 
 .studio {
@@ -53,6 +53,9 @@ ul {
   color: var(--white-color);
 }
 
+.solution-container{
+  border: 1px solid #ECECEC;
+}
 .container-header {
   display: flex;
   justify-content: space-between;
@@ -61,22 +64,22 @@ ul {
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .nav-menu {
   display: flex;
   align-content: center;
+  margin-right: 371px;
 }
 
 /* style dla konkaktów w header na obóch stronach */
 .link-tab {
-  padding: 32px 46px 32px 46px;
   color: var(--contacts-color);
 }
 
 .contacts-size {
   display: flex;
+  gap:46px;
 }
 
 .contacts-size2 {
@@ -84,6 +87,7 @@ ul {
   font-size: 14px;
   line-height: 1.1;
   color: var(--contacts-color);
+  gap: 50px;
 }
 
 .contacts-size a {
@@ -105,30 +109,35 @@ ul {
 }
 
 .box1 {
-  width: 1600px;
-  height: 600px;
   background-color: var(--footer-color);
   justify-content: center;
+  align-items: center;
+  width: 1600px;
+  height: 600px;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 /* style dla h1 w index.html */
 .effects {
+  display: flex;
   font-size: 44px;
   font-weight: 700;
   line-height: 1.3;
   color: var(--white-color);
-  background-color: var(--footer-color);
   justify-content: center;
-  padding: 200px 452px 280px 452px;
-  width: 696px;
-  height: 120px;
+  align-items: center;
+  max-width: 696px;
+  max-height: 120px;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .button-order {
-  padding-top: 30px;
-  padding-left: 700px;
-  padding-right: 700px;
-  padding-bottom: 200px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 .order-text {
@@ -143,6 +152,8 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   padding: 10px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
 
   
 }
@@ -170,6 +181,7 @@ ul {
   color: var(--brand-color);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  padding: 6px 22px 6px 22px;
 }
 
 .text-column {
@@ -177,12 +189,16 @@ ul {
   column-gap: 30px;
   margin-top: 94px;
   margin-bottom: 94px;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo {
   display: flex;
   column-gap: 30px;
   margin-bottom: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 
 .img-size {
@@ -207,20 +223,30 @@ ul {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
-  padding: 94px 695px 50px 695px;
+  justify-content: center;
+  align-items: center;
+  width: 352px;
+  height: 42px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-left: 624px;
+  margin-right: 624px;
 }
 
 .team {
   background-color: #f5f4fa;
-  width: 1600px;
-  height: 648px;
+ width: 1600px;
+ height: 648px;
+ margin-top: 94px;
+ margin: 94px;
 }
 
 .card {
   display: flex;
   column-gap: 30px;
-  padding-bottom: 94px;
-  padding-top: 186px;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-top: 50px;
 }
 
 .shadow-card {
@@ -237,14 +263,14 @@ ul {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
-  padding: 30px; 99px; 10px; 99px;
+  padding: 30px 99px 10px 99px;
 }
 /* style dla stanowisk pracy john done w index.html */
 .john-job {
   font-size: 16px;
   line-height: 1.1;
   color: var(--contacts-color);
-  padding: 10px; 70px; 30px; 70px;
+  padding: 10px 70px 30px 70px;
 }
 
 .button-list {
@@ -289,9 +315,12 @@ ul {
 
 .footer {
   background-color: var(--footer-color);
-  width: 1600px;
   height: 252px;
-  margin-top: 94px;
+}
+
+.container-footer{
+  padding: 60px 215px 60px 215px;
+
 }
 
 /* style dla kontaktów w footerze portfolio.html */
@@ -302,9 +331,6 @@ ul {
   color: var(--white-color);
 }
 
-.contacts-size3{
-
-}
 .link-color-button {
   color: var(--link-color);
 }
