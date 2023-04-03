@@ -27,7 +27,7 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
+max-width: 1200px;
   margin: 0 auto;
   padding: 0, 15px;
   
@@ -54,7 +54,7 @@ ul {
 }
 
 .solution-container{
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 .container-header {
   display: flex;
@@ -110,24 +110,14 @@ ul {
 
 .box1 {
   background-color: var(--footer-color);
-  justify-content: center;
   align-items: center;
-  width: 1600px;
-  height: 600px;
-  padding-left: 452px;
-  padding-right: 452px;
 }
 /* style dla h1 w index.html */
 .effects {
-  display: flex;
   font-size: 44px;
   font-weight: 700;
   line-height: 1.3;
   color: var(--white-color);
-  justify-content: center;
-  align-items: center;
-  max-width: 696px;
-  max-height: 120px;
   padding-top: 200px;
   padding-bottom: 30px;
 }
@@ -136,8 +126,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 200px;
 }
 
 .order-text {
@@ -152,10 +140,8 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   padding: 10px 41px 10px 42px;
-  justify-content: center;
-  align-items: center;
-
-  
+  margin-top: 30px;
+  margin-bottom: 200px;
 }
 /* style dla button w index.html */
 .button-index {
@@ -189,22 +175,17 @@ ul {
   column-gap: 30px;
   margin-top: 94px;
   margin-bottom: 94px;
-  justify-content: center;
-  align-items: center;
+    margin-left: 215px;
+  margin-right: 215px;
 }
 
 .photo {
   display: flex;
   column-gap: 30px;
-  margin-bottom: 94px;
   margin-left: 215px;
   margin-right: 215px;
 }
 
-.img-size {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 /* style dla h3 w index.html */
 .lorem-header {
   font-size: 14px;
@@ -231,14 +212,14 @@ ul {
   margin-bottom: 50px;
   margin-left: 624px;
   margin-right: 624px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .team {
   background-color: #f5f4fa;
- width: 1600px;
- height: 648px;
- margin-top: 94px;
- margin: 94px;
+  width: 1600px;
+  height: 648px;
 }
 
 .card {
@@ -247,15 +228,12 @@ ul {
   margin-left: 215px;
   margin-right: 215px;
   margin-top: 50px;
+  margin-bottom: 94px;
 }
 
 .shadow-card {
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px #0000001f;
-}
-
-.card-discribe {
-  align-self: center;
 }
 
 /* style dla john done w index.html */
@@ -264,8 +242,10 @@ ul {
   font-weight: 500;
   line-height: 1.1;
   padding: 30px 99px 10px 99px;
+  align-items: center;
 }
 /* style dla stanowisk pracy john done w index.html */
+
 .john-job {
   font-size: 16px;
   line-height: 1.1;
@@ -316,6 +296,7 @@ ul {
 .footer {
   background-color: var(--footer-color);
   height: 252px;
+  max-width: 1600px;
 }
 
 .container-footer{
@@ -331,9 +312,16 @@ ul {
   color: var(--white-color);
 }
 
+.contacts-size3{
+  padding-top: 20px;
+}
+
 .link-color-button {
   color: var(--link-color);
+  padding-top: 9px;
+  
 }
+
 
 /* style dla adresu w footerze portfolio.html */
 .adress-size {
@@ -341,4 +329,5 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   color: var(--white-color);
+  padding-bottom: 9px;
 }
