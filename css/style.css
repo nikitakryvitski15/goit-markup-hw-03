@@ -12,25 +12,25 @@
   --footer-color: #2f303a;
   --link-color: #ffffff99;
   --backgrund-button:#F5F4FA; 
+  --border-buttom:#ECECEC; 
+  
 }
 
 /* style dla body na obóch stronach */
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-color);
   font-size: 18px;
 }
 
-ul {
-  list-style: none;
-}
-
 .container {
 max-width: 1200px;
   margin: 0 auto;
   padding: 0, 15px;
-  
+}
+
+.section{
+  padding: 94px 0;
 }
 
 /* style dla logo na obóch stronach */
@@ -53,8 +53,9 @@ max-width: 1200px;
   color: var(--white-color);
 }
 
+/* Style dla header na obuch stronach */
 .solution-container{
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid var(--border-buttom);
 }
 .container-header {
   display: flex;
@@ -64,6 +65,10 @@ max-width: 1200px;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+ul {
+  list-style: none;
 }
 
 .nav-menu {
@@ -121,7 +126,7 @@ max-width: 1200px;
   padding-top: 200px;
   padding-bottom: 30px;
 }
-
+/* Style dla przycisku w index.html */
 .button-order {
   display: flex;
   justify-content: center;
@@ -135,7 +140,7 @@ max-width: 1200px;
   background-color: var(--hover-color);
   color: var(--white-color);
   align-content: center;
-  border: 1px solid #2196f3;
+  border: 1px solid var(--hover-color);
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -161,29 +166,14 @@ max-width: 1200px;
   color: var(--white-color);
 }
 
-.button-port{
-  border: 1px solid var(--backgrund-button);
-  border-radius: 4px;
-  color: var(--brand-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  padding: 6px 22px 6px 22px;
-}
-
 .text-column {
   display: flex;
-  column-gap: 30px;
-  margin-top: 94px;
-  margin-bottom: 94px;
-    margin-left: 215px;
-  margin-right: 215px;
+  justify-content: space-between;
 }
 
 .photo {
   display: flex;
-  column-gap: 30px;
-  margin-left: 215px;
-  margin-right: 215px;
+  justify-content: space-between;
 }
 
 /* style dla h3 w index.html */
@@ -217,18 +207,12 @@ max-width: 1200px;
 }
 
 .team {
-  background-color: #f5f4fa;
-  width: 1600px;
-  height: 648px;
+  background-color: var(--backgrund-button);
 }
 
 .card {
   display: flex;
   column-gap: 30px;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-top: 50px;
-  margin-bottom: 94px;
 }
 
 .shadow-card {
@@ -242,10 +226,9 @@ max-width: 1200px;
   font-weight: 500;
   line-height: 1.1;
   padding: 30px 99px 10px 99px;
-  align-items: center;
 }
-/* style dla stanowisk pracy john done w index.html */
 
+/* style dla stanowisk pracy john done w index.html */
 .john-job {
   font-size: 16px;
   line-height: 1.1;
@@ -253,6 +236,8 @@ max-width: 1200px;
   padding: 10px 70px 30px 70px;
 }
 
+
+/* Style dla portfolio.html */
 .button-list {
   font-size: 16px;
   line-height: 1.6;
@@ -265,12 +250,22 @@ max-width: 1200px;
   
 }
 
+/* Style dla przycisków w portfolio.html */
+.button-port{
+  border: 1px solid var(--backgrund-button);
+  border-radius: 4px;
+  color: var(--brand-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 6px 22px 6px 22px;
+}
+
+/* Style dla kart portfolio.html  */
 .container-card{
   display:flex;
   flex-wrap: wrap;
   row-gap: 30px;
   column-gap: 30px;
-  margin-bottom: 94px;
 }
 
 .border-card{
@@ -293,17 +288,6 @@ max-width: 1200px;
   padding: 4px 24px 20px 24px;
 }
 
-.footer {
-  background-color: var(--footer-color);
-  height: 252px;
-  max-width: 1600px;
-}
-
-.container-footer{
-  padding: 60px 215px 60px 215px;
-
-}
-
 /* style dla kontaktów w footerze portfolio.html */
 .contacts-size3 a {
   font-style: normal;
@@ -312,16 +296,11 @@ max-width: 1200px;
   color: var(--white-color);
 }
 
-.contacts-size3{
-  padding-top: 20px;
-}
-
 .link-color-button {
   color: var(--link-color);
   padding-top: 9px;
   
 }
-
 
 /* style dla adresu w footerze portfolio.html */
 .adress-size {
@@ -330,4 +309,8 @@ max-width: 1200px;
   line-height: 1.7;
   color: var(--white-color);
   padding-bottom: 9px;
+}
+
+.footer {
+  background-color: var(--footer-color);
 }
