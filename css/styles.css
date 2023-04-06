@@ -38,7 +38,7 @@ body {
 
 .container {
 max-width: 1200px;
-  margin: 0 auto;
+margin: 0 auto;
 }
 
 .section{
@@ -129,7 +129,7 @@ ul {
 .box1 {
   display: flex;
   background-color: var(--footer-color);
-
+  text-align: center;
 }
 
 .effects {
@@ -227,7 +227,7 @@ ul {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
-  padding: 30px 99px 10px 99px;
+  margin: 30px 99px 10px 99px;
 }
 
 /* style dla stanowisk pracy john done w index.html */
@@ -235,9 +235,12 @@ ul {
   font-size: 16px;
   line-height: 1.1;
   color: var(--contacts-color);
-  padding: 10px 70px 30px 70px;
+  margin: 10px 70px 30px 70px;
 }
 
+.text-image{
+  text-align: center;
+}
 
 /* Style dla portfolio.html */
 .button-list {
