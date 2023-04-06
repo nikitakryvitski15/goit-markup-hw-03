@@ -47,20 +47,19 @@ margin: 0 auto;
 
 /* style dla logo na obóch stronach */
 .logo {
-  display: flex;
   font-family: var(--font-secondary);
   font-style: bold;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.3;
   color: var(--hover-color);
-  text-decoration: none;
   margin-right: 93px;
 }
 
 .studio {
   color: var(--studio-color);
 }
+
 .studio2 {
   color: var(--white-color);
 }
@@ -69,11 +68,11 @@ margin: 0 auto;
 .solution-container{
   border-bottom: 1px solid var(--border-buttom);
 }
+
 .container-header {
   display: flex;
-  justify-content: space-between;
   height: 80px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: var(--font-primary);
   font-weight: 500;
@@ -85,8 +84,8 @@ ul {
 
 .nav-menu {
   display: flex;
-  align-content: center;
-  margin-right: 371px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* style dla konkaktów w header na obóch stronach */
@@ -107,7 +106,6 @@ ul {
   font-size: 14px;
   line-height: 1.6;
   color: var(--brand-color);
-  text-decoration: none;
 }
 
 .contacts-size:hover,
@@ -127,7 +125,6 @@ ul {
 
 /* style dla h1 w index.html */
 .box1 {
-  display: flex;
   background-color: var(--footer-color);
   text-align: center;
 }
@@ -138,7 +135,6 @@ ul {
   line-height: 1.3;
   color: var(--white-color);
   margin-top: 200px;
-  margin-bottom: 30px;
 }
 /* Style dla przycisku w index.html */
 .order-text {
@@ -167,8 +163,7 @@ ul {
 .button-index:focus,
 .button-port:hover,
 .button-port:focus {
-  cursor: pointer;
-  font-size: 16 px;
+  font-size: 16px;
   background-color: var(--hover-color);
   color: var(--white-color);
 }
@@ -199,12 +194,10 @@ ul {
 
 /* style dla h3 w index.html */
 .two-level {
-  display: flex;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
   text-align: center;
-  justify-content: center;
 }
 
 .team {
@@ -217,6 +210,10 @@ ul {
   margin-top: 50px;
 }
 
+.image-card{
+  min-width: 100%;
+  min-height: 100%;
+}
 .shadow-card {
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px #0000001f;
@@ -227,7 +224,9 @@ ul {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
-  margin: 30px 99px 10px 99px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 /* style dla stanowisk pracy john done w index.html */
@@ -244,15 +243,14 @@ ul {
 
 /* Style dla portfolio.html */
 .button-list {
+  display: flex;
+  justify-content: center;
   font-size: 16px;
   line-height: 1.6;
   color: var(--brand-color);
   display: flex;
-  justify-content: center;
   column-gap: 8px;
-  margin-top: 94px;
   margin-bottom: 50px;
-  
 }
 
 /* Style dla przycisków w portfolio.html */
@@ -265,12 +263,20 @@ ul {
   padding: 6px 22px 6px 22px;
 }
 
+.button-port:hover{
+    box-shadow: 0px 2px 2px 0px #0000001F;
+
+    box-shadow: 0px 1px 2px 0px #00000014;
+    
+    box-shadow: 0px 3px 1px 0px #0000001A;
+    
+}
+
 /* Style dla kart portfolio.html  */
 .container-card{
   display:flex;
   flex-wrap: wrap;
-  row-gap: 30px;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .border-card{
@@ -320,5 +326,4 @@ ul {
   background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
 }
