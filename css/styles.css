@@ -313,7 +313,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   color: var(--white-color);
-  padding-bottom: 9px;
+  margin-top:20px;
 }
 
 .footer {
